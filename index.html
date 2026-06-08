@@ -1,59 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Cumpleaños Cielo ❤️</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Cumpleaños Cielo</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
 </head>
+
 <body>
 
-    <div class="hero">
-        <h1>🎂 Feliz Cumpleaños Cielo 🎂</h1>
-        <h2>20 años</h2>
-        <p>Hoy es un día especial porque celebramos tu vida.</p>
-    </div>
+<div id="stars"></div>
 
-    <section class="mensaje">
-        <h2>Un mensaje para ti</h2>
+<audio id="music" loop>
+    <source src="musica.mp3" type="audio/mp3">
+</audio>
 
-        <p>
-            Cielo, hoy cumples 20 años y quería regalarte algo diferente.
-            Aunque el tiempo haya pasado y nuestras vidas hayan tomado caminos distintos,
-            siempre voy a recordar los momentos bonitos que compartimos.
-        </p>
+<section class="hero">
 
-        <p>
-            Te deseo mucha felicidad, salud, éxito y que todos tus sueños se hagan realidad.
-            Nunca dejes de sonreír y de luchar por aquello que te hace feliz.
-        </p>
+<h1>Cielo 💙</h1>
 
-        <p>
-            Feliz cumpleaños. 🎉✨
-        </p>
-    </section>
+<h2>Feliz Cumpleaños 20</h2>
 
-    <section class="galeria">
-        <h2>📸 Tus recuerdos</h2>
+<p>
+Un pequeño regalo digital creado especialmente para ti.
+</p>
 
-        <div class="fotos">
-            <img src="img/foto1.jpg">
-            <img src="img/foto2.jpg">
-            <img src="img/foto3.jpg">
-        </div>
-    </section>
+<button onclick="startExperience()">
+Abrir Regalo 🎁
+</button>
 
-    <section class="contador">
-        <h2>🎈 Que este nuevo año esté lleno de momentos increíbles 🎈</h2>
-    </section>
+</section>
 
-    <button onclick="mostrarSorpresa()">
-        Haz clic aquí ❤️
-    </button>
+<section class="envelope-container">
 
-    <div id="sorpresa"></div>
+<div class="envelope" onclick="openLetter()">
 
-    <script src="script.js"></script>
+<div class="front"></div>
+
+<div class="letter">
+
+<h2>Para Cielo 💙</h2>
+
+<p>
+Hola Cielo.
+
+Hoy cumples 20 años y quise regalarte algo diferente.
+
+Nos conocimos en SISE y compartimos una etapa que recuerdo con cariño.
+
+Aunque nuestras vidas tomaron caminos distintos, siempre agradeceré los momentos que vivimos durante esos 9 meses.
+
+Te deseo felicidad, éxito, salud y que sigas viajando, dibujando y cumpliendo cada una de tus metas.
+
+Que este nuevo año de vida esté lleno de experiencias increíbles.
+
+Feliz cumpleaños.
+
+— Dayron 💙
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="slider-section">
+
+<h2>Recuerdos 📸</h2>
+
+<div class="slider">
+
+<img src="img/foto1.jpg">
+<img src="img/foto2.jpg">
+<img src="img/foto3.jpg">
+<img src="img/foto4.jpg">
+<img src="img/foto5.jpg">
+
+</div>
+
+</section>
+
+<section class="qualities">
+
+<div class="card">
+✈️ Viajar
+</div>
+
+<div class="card">
+🎨 Dibujar
+</div>
+
+<div class="card">
+🌟 Soñar
+</div>
+
+<div class="card">
+💙 Cumplir 20
+</div>
+
+</section>
+
+<footer>
+
+<p>
+Feliz Cumpleaños Cielo 💙
+</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
