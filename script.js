@@ -1,14 +1,11 @@
 function startExperience(){
 
-document.getElementById("music").play();
-
 confetti({
-particleCount:250,
-spread:180
+    particleCount:250,
+    spread:180
 });
 
 }
-
 function openLetter(){
 
 document
