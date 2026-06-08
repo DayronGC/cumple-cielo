@@ -1,38 +1,35 @@
 function startExperience(){
 
 confetti({
-    particleCount:250,
-    spread:180
+particleCount:250,
+spread:180
 });
 
-}
-function openLetter(){
+const container = document.getElementById("flower-container");
 
-document
-.querySelector(".envelope")
-.classList.toggle("open");
+container.innerHTML = "";
 
-confetti({
-particleCount:150,
-spread:120
-});
+const flower = document.createElement("div");
+
+flower.className = "flower";
+
+flower.innerHTML = "🌹";
+
+container.appendChild(flower);
 
 }
 
 function createHeart(){
 
-const heart =
-document.createElement("div");
+const heart = document.createElement("div");
 
-heart.innerHTML="💙";
+heart.innerHTML = "💙";
 
-heart.style.position="fixed";
-heart.style.left=Math.random()*100+"vw";
-heart.style.bottom="-20px";
-heart.style.fontSize=(20+Math.random()*20)+"px";
-
-heart.style.animation=
-"float 8s linear forwards";
+heart.style.position = "fixed";
+heart.style.left = Math.random()*100 + "vw";
+heart.style.bottom = "-20px";
+heart.style.fontSize = (20 + Math.random()*20) + "px";
+heart.style.animation = "float 8s linear forwards";
 
 document.body.appendChild(heart);
 
@@ -44,10 +41,9 @@ heart.remove();
 
 setInterval(createHeart,400);
 
-const style =
-document.createElement("style");
+const style = document.createElement("style");
 
-style.innerHTML=`
+style.innerHTML = `
 
 @keyframes float{
 
